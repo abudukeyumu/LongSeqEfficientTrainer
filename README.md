@@ -32,6 +32,7 @@ python efficient_train.py
 - ****`mini_batch_size`****: Defines the micro-batch size for each gradient accumulation step
 - ****`per_device_train_batch_size-`****: Number of samples processed per device in each step
 - ****`gradient_accumulation_steps-`****: Number of steps over which gradients are accumulated
+  
 Note: The effective batch size is calculated as:
 effective_batch_size = per_device_train_batch_size * gradient_accumulation_steps
 ## Evaluation
