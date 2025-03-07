@@ -40,8 +40,8 @@ To evaluate the trained model, run:
 
 bash eval.sh
 ## Result
-| per_device-mini_batch-epoch | Doc2Dial |  |  |  |  | quac |  |  |  |  | qrecc |  |  |  |  |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| per_device-mini_batch-epoch | Doc2Dial |||||| quac ||||| qrecc |||||
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | | Recall@1 | Recall@5 | Recall@20 | MRR@20 | NDCG@20 | Recall@1 | Recall@5 | Recall@20 | MRR@20 | NDCG@20 | Recall@1 | Recall@5 | Recall@20 | MRR@20 | NDCG@20 |
 | bge-large-en-v1.5 | 32.55 | 66.13 | 86.98 | 47.57 | 56.08 | 47.93 | 74.26 | 92.02 | 59.81 | 67.22 | 32.76 | 74.27 | 95.63 | 50.83 | 61.28 |
 | 32-16-epoch-1 | 48.29 | 81.47 | 94.11 | 62.78 | 70.01 | 60.39 | 89 | 98.23 | 72.6 | 78.72 | 67.31 | 95.7 | 99.61 | 79.59 | 84.53 |
