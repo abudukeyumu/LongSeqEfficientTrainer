@@ -40,10 +40,62 @@ To evaluate the trained model, run:
 
 bash eval.sh
 ## Result
-| per_device-mini_batch-epoch | Doc2Dial |||||| quac ||||| qrecc |||||
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| | Recall@1 | Recall@5 | Recall@20 | MRR@20 | NDCG@20 | Recall@1 | Recall@5 | Recall@20 | MRR@20 | NDCG@20 | Recall@1 | Recall@5 | Recall@20 | MRR@20 | NDCG@20 |
-| bge-large-en-v1.5 | 32.55 | 66.13 | 86.98 | 47.57 | 56.08 | 47.93 | 74.26 | 92.02 | 59.81 | 67.22 | 32.76 | 74.27 | 95.63 | 50.83 | 61.28 |
-| 32-16-epoch-1 | 48.29 | 81.47 | 94.11 | 62.78 | 70.01 | 60.39 | 89 | 98.23 | 72.6 | 78.72 | 67.31 | 95.7 | 99.61 | 79.59 | 84.53 |
-| 32-16-epoch-1 | 48.72 | 82.05 | 94.11 | 63.33 | 70.7 | 58.29 | 88.16 | 98 | 71.07 | 77.49 | 66.24 | 95.63 | 99.71 | 78.98 | 84.09 |
-| 32-16-epoch-1 | 48.54 | 82.03 | 94.16 | 63.22 | 70.56 | 57.98 | 88.58 | 98.04 | 71 | 77.46 | 66.27 | 95.77 | 99.75 | 78.95 | 84.07 |
+<style type="text/css">
+.tg  {border:none;border-collapse:collapse;border-spacing:0;}
+.tg td{border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;
+  padding:10px 5px;word-break:normal;}
+.tg th{border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:center}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:center}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky" rowspan="2"></th>
+    <th class="tg-c3ow" colspan="3">Average</th>
+    <th class="tg-c3ow" colspan="3">Doc2Dial</th>
+    <th class="tg-c3ow" colspan="3">QuAC</th>
+    <th class="tg-c3ow" colspan="3">QReCC</th>
+  </tr>
+  <tr>
+    <th class="tg-c3ow">top-1</th>
+    <th class="tg-c3ow">top-5</th>
+    <th class="tg-c3ow">top-20</th>
+    <th class="tg-c3ow">top-1</th>
+    <th class="tg-c3ow">top-5</th>
+    <th class="tg-c3ow">top-20</th>
+    <th class="tg-c3ow">top-1</th>
+    <th class="tg-c3ow">top-5</th>
+    <th class="tg-c3ow">top-20</th>
+    <th class="tg-c3ow">top-1</th>
+    <th class="tg-c3ow">top-5</th>
+    <th class="tg-c3ow">top-20</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">bge-large-en-v1.5</td>
+    <td class="tg-c3ow">37.75</td>
+    <td class="tg-c3ow">71.55</td>
+    <td class="tg-c3ow">91.54</td>		
+    <td class="tg-c3ow">32.55</td>
+    <td class="tg-c3ow">66.13</td>
+    <td class="tg-c3ow">86.98</td>		
+    <td class="tg-c3ow">47.93</td>
+    <td class="tg-c3ow">74.26</td>
+    <td class="tg-c3ow">92.02</td>		
+    <td class="tg-c3ow">32.76</td>
+    <td class="tg-c3ow">74.27</td>
+    <td class="tg-c3ow">95.63</td>		
+  </tr>
+  <tr>		
+    <td class="tg-0pky">bge-synthesisQA</td>
+    <td class="tg-c3ow">51.72</td>
+    <td class="tg-c3ow">83.12</td>
+    <td class="tg-c3ow">95.02</td>		
+    <td class="tg-c3ow">38.72</td>
+    <td class="tg-c3ow">71.39</td>
+    <td class="tg-c3ow">88.86</td>		
+    <td 
+
