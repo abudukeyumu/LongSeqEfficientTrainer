@@ -37,6 +37,7 @@ Note: The effective batch size is calculated as:
 effective_batch_size = per_device_train_batch_size * gradient_accumulation_steps
 ## Evaluation
 To evaluate the trained model, run:
+
 bash eval.sh
 ## Result
   The script computes the following metrics for three datasets on five different models:
