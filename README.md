@@ -20,12 +20,12 @@ This repository contains the implementation of a highly efficient training frame
 
 ### Original Training
 To run the original unoptimized training script:
-```bash
+bash
 python origin_train.py
 
 ### Efficient Training
 To train using the optimized script with large batch size:
-```bash
+bash
 python efficient_train.py
 
 #### Key Arguments
