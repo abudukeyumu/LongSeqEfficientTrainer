@@ -29,14 +29,14 @@ To train using the optimized script with large batch size:
 python efficient_train.py
 
 #### Key Arguments
-- ****`mini_batch_size`****:: Defines the micro-batch size for each gradient accumulation step
-per_device_train_batch_size: Number of samples processed per device in each step
-gradient_accumulation_steps: Number of steps over which gradients are accumulated
+- ****`mini_batch_size`****: Defines the micro-batch size for each gradient accumulation step
+- ****`per_device_train_batch_size- ****`: Number of samples processed per device in each step
+- ****`gradient_accumulation_steps- ****`: Number of steps over which gradients are accumulated
 Note: The effective batch size is calculated as:
 effective_batch_size = per_device_train_batch_size * gradient_accumulation_steps
-##Evaluation
+## Evaluation
 To evaluate the trained model, run:
-```bash
 bash eval.sh
-#### The script computes the following metrics for three datasets on five different models:
+## Result
+  The script computes the following metrics for three datasets on five different models:
 Recall@1, Recall@5, Recall@20，MRR@20, NDCG@20
