@@ -26,13 +26,13 @@ This repository contains the implementation of a highly efficient training frame
 To run the original unoptimized training script:
 ```bash
 python origin_train.py
-Efficient Training
+### Efficient Training
 To train using the optimized script with large batch size:
 
 bash
 
- 
 python efficient_train.py
+
 Key Arguments
 mini_batch_size: Defines the micro-batch size for each gradient accumulation step.
 per_device_train_batch_size: Number of samples processed per device in each step.
@@ -44,16 +44,14 @@ Example:
 
 bash
 
- 
-python efficient_train.py --mini_batch_size 16 --per_device_train_batch_size 4 --gradient_accumulation_steps 8
-This configuration results in an effective batch size of 4 * 8 = 32.
+python efficient_train.py
+
 
 Evaluation
 To evaluate the trained model, run the following command:
 
 bash
 
- 
 bash eval.sh
 The script computes the following metrics for three datasets on five different models:
 
