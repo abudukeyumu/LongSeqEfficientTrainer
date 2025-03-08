@@ -43,7 +43,7 @@ bash eval.sh
 <table>
   <thead>
     <tr>
-      <th rowspan="2">per_device-mini_batch-epoch</th>
+      <th rowspan="2">raw_train-batch_size</th>
       <th colspan="5" style="text-align: center;">Doc2Dial</th>
       <th colspan="5" style="text-align: center;">quac</th>
       <th colspan="5" style="text-align: center;">qrec</th>
@@ -68,76 +68,130 @@ bash eval.sh
   </thead>
   <tbody>
     <tr>
-      <td>bge-large-en-v1.5</td>
-      <td>32.55</td>
-      <td>66.13</td>
-      <td>86.98</td>
-      <td>47.57</td>
-      <td>56.68</td>
-      <td>47.93</td>
-      <td>74.26</td>
-      <td>92.02</td>
-      <td>59.81</td>
-      <td>67.22</td>
-      <td>32.76</td>
-      <td>74.27</td>
+      <td>raw-4</td>
+      <td>43.92</td>
+      <td>75.73</td>
+      <td>91.24</td>
+      <td>58.00</td>
+      <td>65.78</td>
+      <td>55.70</td>
+      <td>88.02</td>
+      <td>98.53</td>
+      <td>69.40</td>
+      <td>76.35</td>
+      <td>69.10</td>
       <td>95.63</td>
-      <td>50.83</td>
-      <td>61.28</td>
+      <td>99.68</td>
+      <td>80.65</td>
+      <td>85.33</td>
     </tr>
     <tr>
-      <td>32-16-epoch-1</td>
-      <td>48.29</td>
-      <td>81.47</td>
-      <td>94.11</td>
-      <td>62.78</td>
-      <td>70.01</td>
-      <td>60.39</td>
-      <td>89.00</td>
-      <td>98.23</td>
-      <td>72.60</td>
-      <td>78.72</td>
-      <td>67.31</td>
-      <td>95.70</td>
-      <td>99.61</td>
-      <td>79.59</td>
-      <td>84.53</td>
-    </tr>
-    <tr>
-      <td>32-16-epoch-1</td>
-      <td>48.72</td>
-      <td>82.05</td>
-      <td>94.16</td>
-      <td>63.33</td>
-      <td>70.70</td>
-      <td>58.29</td>
-      <td>88.16</td>
-      <td>98.00</td>
-      <td>71.07</td>
-      <td>77.49</td>
-      <td>66.24</td>
-      <td>95.63</td>
-      <td>99.71</td>
-      <td>78.95</td>
-      <td>84.09</td>
-    </tr>
-    <tr>
-      <td>32-16-epoch-1</td>
-      <td>48.54</td>
-      <td>82.03</td>
-      <td>94.16</td>
-      <td>63.22</td>
-      <td>70.56</td>
-      <td>57.98</td>
-      <td>88.58</td>
-      <td>98.04</td>
-      <td>71.00</td>
-      <td>77.46</td>
-      <td>66.27</td>
+      <td>new-4</td>
+      <td>43.44</td>
+      <td>77.00</td>
+      <td>91.98</td>
+      <td>58.20</td>
+      <td>66.14</td>
+      <td>55.87</td>
+      <td>88.99</td>
+      <td>98.30</td>
+      <td>71.62</td>
+      <td>77.99</td>
+      <td>68.60</td>
       <td>95.77</td>
-      <td>99.75</td>
-      <td>78.95</td>
-      <td>84.07</td>
+      <td>99.68</td>
+      <td>80.42</td>
+      <td>85.16</td>
+    </tr>
+    <tr>
+      <td>raw-8</td>
+      <td>47.27</td>
+      <td>79.61</td>
+      <td>93.37</td>
+      <td>61.56</td>
+      <td>69.06</td>
+      <td>60.02</td>
+      <td>89.95</td>
+      <td>98.65</td>
+      <td>72.72</td>
+      <td>78.92</td>
+      <td>66.95</td>
+      <td>95.57</td>
+      <td>99.61</td>
+      <td>79.35</td>
+      <td>84.33</td>
+    </tr>
+    <tr>
+      <td>new-8</td>
+      <td>47.47</td>
+      <td>80.22</td>
+      <td>93.60</td>
+      <td>61.86</td>
+      <td>69.35</td>
+      <td>61.20</td>
+      <td>90.17</td>
+      <td>98.71</td>
+      <td>73.49</td>
+      <td>79.53</td>
+      <td>67.67</td>
+      <td>95.41</td>
+      <td>99.64</td>
+      <td>79.70</td>
+      <td>84.61</td>
+    </tr>
+    <tr>
+      <td>raw-32</td>
+      <td>46.81</td>
+      <td>81.04</td>
+      <td>94.06</td>
+      <td>61.81</td>
+      <td>69.45</td>
+      <td>58.69</td>
+      <td>88.20</td>
+      <td>98.11</td>
+      <td>71.27</td>
+      <td>77.66</td>
+      <td>68.35</td>
+      <td>96.34</td>
+      <td>99.78</td>
+      <td>80.34</td>
+      <td>85.14</td>
+    </tr>
+    <tr>
+      <td>new-32</td>
+      <td>48.13</td>
+      <td>81.52</td>
+      <td>94.11</td>
+      <td>62.67</td>
+      <td>70.13</td>
+      <td>60.61</td>
+      <td>89.11</td>
+      <td>98.21</td>
+      <td>72.83</td>
+      <td>78.89</td>
+      <td>67.38</td>
+      <td>95.84</td>
+      <td>99.71</td>
+      <td>79.71</td>
+      <td>84.65</td>
+    </tr>
+    <tr>
+      <td>avg</td>
+      <td>46.17</td>
+      <td>79.19</td>
+      <td>93.06</td>
+      <td>60.35</td>
+      <td>68.32</td>
+      <td>58.68</td>
+      <td>89.07</td>
+      <td>98.42</td>
+      <td>71.89</td>
+      <td>78.22</td>
+      <td>67.34</td>
+      <td>95.76</td>
+      <td>99.68</td>
+      <td>80.03</td>
+      <td>84.71</td>
     </tr>
   </tbody>
 </table>
