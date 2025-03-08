@@ -44,9 +44,10 @@ bash eval.sh
   <thead>
     <tr>
       <th rowspan="2">raw_train-batch_size</th>
-      <th colspan="6" style="text-align: center;">Doc2Dial</th>
-      <th colspan="6" style="text-align: center;">quac</th>
-      <th colspan="6" style="text-align: center;">qrec</th>
+      <th colspan="5" style="text-align: center;">Doc2Dial</th>
+      <th colspan="5" style="text-align: center;">quac</th>
+      <th colspan="5" style="text-align: center;">qrec</th>
+      <th colspan="5" style="text-align: center;">avg</th>
     </tr>
     <tr>
       <th>Recall@1</th>
@@ -54,19 +55,21 @@ bash eval.sh
       <th>Recall@20</th>
       <th>MRR@20</th>
       <th>NDCG@20</th>
-      <th>avg</th>
       <th>Recall@1</th>
       <th>Recall@5</th>
       <th>Recall@20</th>
       <th>MRR@20</th>
       <th>NDCG@20</th>
-      <th>avg</th>
       <th>Recall@1</th>
       <th>Recall@5</th>
       <th>Recall@20</th>
       <th>MRR@20</th>
       <th>NDCG@20</th>
-      <th>avg</th>
+      <th>Recall@1</th>
+      <th>Recall@5</th>
+      <th>Recall@20</th>
+      <th>MRR@20</th>
+      <th>NDCG@20</th>
     </tr>
   </thead>
   <tbody>
@@ -77,19 +80,21 @@ bash eval.sh
       <td>91.24</td>
       <td>58.00</td>
       <td>65.78</td>
-      <td>66.93</td>
       <td>55.70</td>
       <td>88.02</td>
       <td>98.53</td>
       <td>69.40</td>
       <td>76.35</td>
-      <td>77.60</td>
       <td>69.10</td>
       <td>95.63</td>
       <td>99.68</td>
       <td>80.65</td>
       <td>85.33</td>
-      <td>86.48</td>
+      <td>56.91</td>
+      <td>86.46</td>
+      <td>96.48</td>
+      <td>69.35</td>
+      <td>75.82</td>
     </tr>
     <tr>
       <td>new-4</td>
@@ -98,19 +103,21 @@ bash eval.sh
       <td>91.98</td>
       <td>58.20</td>
       <td>66.14</td>
-      <td>67.35</td>
       <td>55.87</td>
       <td>88.99</td>
       <td>98.30</td>
       <td>71.62</td>
       <td>77.99</td>
-      <td>78.95</td>
       <td>68.60</td>
       <td>95.77</td>
       <td>99.68</td>
       <td>80.42</td>
       <td>85.16</td>
-      <td>85.93</td>
+      <td>55.97</td>
+      <td>87.25</td>
+      <td>96.65</td>
+      <td>70.08</td>
+      <td>76.43</td>
     </tr>
     <tr>
       <td>raw-8</td>
@@ -119,19 +126,21 @@ bash eval.sh
       <td>93.37</td>
       <td>61.56</td>
       <td>69.06</td>
-      <td>70.37</td>
       <td>60.02</td>
       <td>89.95</td>
       <td>98.65</td>
       <td>72.72</td>
       <td>78.92</td>
-      <td>80.05</td>
       <td>66.95</td>
       <td>95.57</td>
       <td>99.61</td>
       <td>79.35</td>
       <td>84.33</td>
-      <td>85.16</td>
+      <td>58.74</td>
+      <td>88.38</td>
+      <td>97.21</td>
+      <td>71.21</td>
+      <td>77.44</td>
     </tr>
     <tr>
       <td>new-8</td>
@@ -140,19 +149,21 @@ bash eval.sh
       <td>93.60</td>
       <td>61.86</td>
       <td>69.35</td>
-      <td>70.70</td>
       <td>61.20</td>
       <td>90.17</td>
       <td>98.71</td>
       <td>73.49</td>
       <td>79.53</td>
-      <td>80.62</td>
       <td>67.67</td>
       <td>95.41</td>
       <td>99.64</td>
       <td>79.70</td>
       <td>84.61</td>
-      <td>85.41</td>
+      <td>58.78</td>
+      <td>88.60</td>
+      <td>97.32</td>
+      <td>71.68</td>
+      <td>77.83</td>
     </tr>
     <tr>
       <td>raw-32</td>
@@ -161,19 +172,21 @@ bash eval.sh
       <td>94.06</td>
       <td>61.81</td>
       <td>69.45</td>
-      <td>70.63</td>
       <td>58.69</td>
       <td>88.20</td>
       <td>98.11</td>
       <td>71.27</td>
       <td>77.66</td>
-      <td>78.79</td>
       <td>68.35</td>
       <td>96.34</td>
       <td>99.78</td>
       <td>80.34</td>
       <td>85.14</td>
-      <td>86.39</td>
+      <td>57.95</td>
+      <td>88.53</td>
+      <td>97.32</td>
+      <td>71.14</td>
+      <td>77.42</td>
     </tr>
     <tr>
       <td>new-32</td>
@@ -182,19 +195,21 @@ bash eval.sh
       <td>94.11</td>
       <td>62.67</td>
       <td>70.13</td>
-      <td>71.31</td>
-      <td>60.61</td>
+      <td>59.31</td>
       <td>89.11</td>
       <td>98.21</td>
       <td>72.83</td>
       <td>78.89</td>
-      <td>80.33</td>
       <td>67.38</td>
       <td>95.84</td>
       <td>99.71</td>
       <td>79.71</td>
       <td>84.65</td>
-      <td>85.86</td>
+      <td>58.94</td>
+      <td>88.82</td>
+      <td>97.34</td>
+      <td>71.74</td>
+      <td>77.72</td>
     </tr>
   </tbody>
 </table>
